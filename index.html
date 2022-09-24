@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--Dili değiştirmiyorum zira klonun kendisi ingilizce kaynaktan olacak-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google!</title>
+    <link rel="icon" href="img/iconG.png" type="image/x-icon">
+    <!-- First Google Icon (It's used until 2007.) -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/iconG.webp" type="image/x-icon">
+    <!-- Google 1998 Beta Version Clone without inspect except for color pallette.-->
 </head>
 <body>
-    <!-- Header - Start -->
-        <!-- Navbar - Start -->
-        <div class="img">
+    <div class="container">
+<!-- Header - Start -->
+        <header class="header">
             <img src="img/logoG.jpeg" alt="Google!">
+        </header>
+<!-- Header - End -->
+        <br>
+<!-- Search Content - Start -->
+        <div class="top">
+            Search the web using Google!<br>
+            <input type="text"><br>
+            <button>
+                <a class="nolink" href="https://www.google.com/">Google Search</a> 
+            </button>
+            <button>
+                <a class="nolink" href="https://www.google.com/doodles">I'm feeling lucky</a> 
+            </button>
         </div>
-        <!-- Navbar - End -->
-    <!-- Header - End -->
-
-    <!-- Content - Start -->
-    <table>
-        <tr>
-            <td>
-             <p style="display: inline;">Search the web using Google!</p><br>
-             <input class="src" type="text"><br>
-             <button class="button1">Google Search</button>
-             <button class="button1">I`m feeling lucky</button>
-            </td>
-        </tr>
-    </table>
-    <table> 
-        <tr>
-            <!-- Content - Left -->
-            <td class="t2d1">
-                <p style="display: inline;">Special Searches</p><br>
-                <a href="https://web.archive.org/web/19990224014327/http://www.google.com/stanford">Stanford Search</a><br>
-                <a href="https://web.archive.org/web/19990221231654/http://www.google.com/linux">Linux Search</a>
-             </td>
-             <td class="t2d2">
-             <!-- Content - Center -->
-                <a href="https://web.archive.org/web/19990221212930if_/http://www.google.com/help.html">Help!</a><br>
-                <a href="https://web.archive.org/web/19990427105230if_/http://www.google.com/about.html">About Google!</a><br>
-                <a href="https://web.archive.org/web/19981202230410if_/http://www.google.com/company.html">Company Info</a><br>
-                <a href="https://web.archive.org/web/19990224043535if_/http://www.google.com/stickers.html">Google! Logos</a>
-             </td>
-             <td class="t2d3">
-             <!-- Content - Right  -->
-                <p style="display: block;">Get Google!</p>
-                <p > updates monthly:</p>
-                <input type="text" value="your e-mail"><br>
-                <button class="b1">Subscribe</button>
-                <a class="arc" href="https://web.archive.org/web/19990116224431/http://www.findmail.com/list/google-friends">Archive</a>
-            </td>
-        </tr>
-    </table>
-    <!-- Content - End -->
-
-    <!-- Footer - Start -->
-        <!-- Navbar - Start -->
-    <footer class="copy">
-        Copyright ©1998 Google Inc.
-    </footer>
-        <!-- Navbar - End -->
-    <!-- Footer - End -->
+<!-- Search Content - End --> 
+        <br>
+<!-- Left Bar - Start -->
+        <article class="first item">
+            Special Searches<br>
+            <a href="https://web.archive.org/web/19990224014327/http://www.google.com/stanford">Stanford Search</a>
+            <a href="https://web.archive.org/web/19990221231654/http://www.google.com/linux">Linux Search</a>
+        </article>
+<!-- Left Bar - End -->
+        <br>
+<!-- Main Bar - Start -->
+        <article class="second item">
+            <a href="https://web.archive.org/web/19990221212930if_/http://www.google.com/help.html">Help!</a><br>
+            <a href="https://about.google/">About Google!</a><br>
+            <a href="https://web.archive.org/web/19990221202430if_/http://www.google.com/company.html">Company Info</a><br>
+            <a href="https://web.archive.org/web/19990224043535if_/http://www.google.com/stickers.html">Google! Logos</a><br>
+        </article>
+<!-- Main Bar - End -->
+        <br>
+<!-- Right Bar - Start -->
+        <article class="third item">
+            Get Google!<br>
+            updates monthly:<br>
+            <input type="text" placeholder="your e-mail"><br>
+            <button>Subscribe</button> <a href="https://web.archive.org/web/19991009030623/http://www.egroups.com/group/google-friends/">Archive</a>
+        </article>
+<!-- Right Bar - End -->
+        <br>
+<!-- Footer - Start-->
+        <footer class="footer item">
+            Copyright ©1998 Google Inc.
+        </footer>
+<!-- Footer - End-->
+    </div>
 </body>
 </html>

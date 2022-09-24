@@ -1,63 +1,65 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
-    height: 20%;
-    font-size: 10px;
-    background-color: #FFFFFF;
-}
 
-/* Body - End */
-
-img{
-    width: 50%;
-}
-div.img{
-    display: flex;
-    justify-content: center;
-}
-
-/* Logo - End */
-
-table{
-    display: flex;
-    justify-content: center;
-    border: 0;
-    width: 90%;
-    margin: auto;
+/* All Contents Design */
+div.container{
     text-align: center;
-    background-color: #e0e0e0;
+    margin: 0 20px;
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'top top top top top top'        
+        'first first second second third third'
+        'footer footer footer footer footer footer';
+    gap: 2px;
+    padding: 5px;
 }
 
-td{
-   width: 500px;
+/* Header Design */
+header.header{
+    grid-area: header;
 }
 
-input.src{
-    display: inline-block;
-    width: 80%;
-}
-button.button1{
-    font-size: 9px;
+/* Search Area Design */
+div.top{
+    background-color: #EEEEEE;
+    grid-area: top;
 }
 
-td.t2d1{
-    background-color: #7EE5DA;
-    width: 37%;
-}
-td.t2d2{
-    background-color: #62B3AA;
-}
-td.t2d3{
-    background-color: #62B3AA;
-}
-a.arc{
-    padding-left: 5px;
+/* Removed Highlights from Buttons */
+a.nolink{
+    text-decoration: none;
+    color: black;
 }
 
-/* Content - End */
-
-footer.copy{
-    margin: 10px;
+/* All Bars' Design */
+article{
+    grid-template-columns: auto;
+    padding: 5px;
     text-align: center;
 }
 
-/* Footer - End */
+/* Left Bar's Design */
+article.first{
+    /* Next three CSS tags used for contents' centering */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #7ee5da;
+    grid-area: first;
+}
+
+/* Main Bar's Design */
+article.second{
+    background-color: #70ccc2;
+    grid-area: second;
+}
+
+/* Right Bar's Design */
+article.third{
+    background-color: #62b3aa;
+    grid-area: third;
+}
+
+/* Footer Design */
+footer{
+    grid-area: footer;
+}
